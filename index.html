@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car Feature Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 100vh;
+            position: relative; 
+        }
+
+        .container img.bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1; 
+        }
+
+        nav {
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%; 
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0); 
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .content {
+            padding: 20px;
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+            align-content: center;
+        } 
+
+        .content a {
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: white;
+            margin-bottom: 1.2em;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .content a:hover {
+            box-shadow: 0 2px 9px;
+        }
+
+        .content a span {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content a p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 20px; 
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white; 
+            border-radius: 10px; 
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#aerodynamics">Aerodynamics</a></li>
+            <li><a href="#lightweight">Lightweight</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#interior">Interior</a></li>
+        </ul>
+    </nav>
     
+    <div class="container">
+        <img src="homepage porsche.png" alt="Background Image" class="bg-image">
+        <div class="content">
+            <a href="#aerodynamics">
+                <span>Aerodynamics and design</span>
+                <p>Experience maximum downforce for unbridled euphoria.</p>
+            </a>
+            <a href="#lightweight">
+                <span>Lightweight construction</span>
+                <p>Find out more about the consistent lightweight construction concept.</p>
+            </a>
+            <a href="#performance">
+                <span>Performance</span>
+                <p>Get your pulse racing with impressive race track performance.</p>
+            </a>
+            <a href="#interior">
+                <span>Interior and infotainment</span>
+                <p>Discover the motorsport-inspired interior.</p>
+            </a>
+        </div>
+    </div> 
+
+    <footer>
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
