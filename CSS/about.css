@@ -1,6 +1,14 @@
+body {
+    background-image: url('https://wallpaper.forfun.com/fetch/c0/c01662f04a772e80bd330eef1b9c77b0.jpeg');
+    background-size: cover; /*ensures the background image covers the entire page*/
+    background-attachment: fixed; /*keeps the image fixed while scrolling*/
+    background-position: center; /*centers the background image*/
+    margin: 0; /*ensures the background touches the edge of the browser*/
+    padding: 0; 
+}
 /*styles header section of the page*/
 header {
-    background-color: white;
+    background-color: black;
 }
 
 /*styling for image making it centered and sized correctly*/
@@ -8,17 +16,17 @@ header img {
     display: block; /*allows changes to margin*/
     margin-left: auto; /*centers image*/
     margin-right: auto; /*centers image*/
-    max-width: 100%; /*ensures the image occupies the full width of contaier*/
+    width: 30%; /*ensures the image occupies the full width of contaier*/
 }
 
 /*styles main divbox width and background properties */
 .main {
-    width: 70%; /*makes main divbox slimmer*/
+    width: 60%; /*makes main divbox slimmer*/
     display: block; /*allows changes to margin*/
     background-color: white;
     margin-left: auto; /*centers content*/
     margin-right: auto; /*centers content*/
-    margin-bottom: 5em; /*space between main divbox and footer*/
+    margin-bottom: 6em; /*space between main divbox and footer*/
 }
 
 /*styles title in main divbox*/
@@ -32,7 +40,7 @@ header img {
 
 /*styles the content box for text*/
 .textbox {
-    width: 70%; /*matches the width of the main divbox*/
+    width: 60%; /*matches the width of the main divbox*/
     display: block; /*allows changes to margin*/
     background-color: white;
     color: #333;
@@ -65,17 +73,17 @@ header img {
 
 /*styles the footer of page*/
 footer {
-    background-color: white;
+    background-color: black;
     text-align: center; /*centers the text*/
     padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace
 }
 
 /*Footer text styling*/
 footer p {
     margin: 0;
     font-size: 14px;
-    color: #333;
+    color: rgb(160, 4, 35);
 }
 
 /*sesponsive design for smaller screens(mobile devices)*/
