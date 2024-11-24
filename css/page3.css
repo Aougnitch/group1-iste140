@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Commissioner", sans-serif;
+    font-family: "Porsche-next", Arial;
     
 }
 
@@ -23,17 +22,20 @@ ul{
 li{
     padding: 0px;
     margin: 0.25rem 1rem;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 16px;
     
 }
 
+
 .title{
     background-color:rgb(238,239,242);
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
+    color: rgb(144, 21, 35);
     font-weight: 600;
     text-align: center;
+    font-family: "Porsche", serif;
 }
+
 
 /* top container */
 
@@ -117,8 +119,22 @@ video{
         flex-direction: column;
     }
 
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     li{
+        display: flex;
+        flex-direction: column;
         margin: 0.25rem 0;
+        font-size: 16px;
+    }
+
+    li .span1{
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     .image-lists{
@@ -132,14 +148,9 @@ video{
     flex-direction: column;
 }
 
-    .car.hover {
-        position: fixed;
-        opacity: 0;
-        z-index: 0;
-    }
 }
 
-@media (max-width:425px) {
+@media (max-width:426px) {
  
     .single-img-con{
         width: 100%;
@@ -149,9 +160,24 @@ video{
         font-size: 10px;
     }
 
-    li{
-        margin: 0 0.25rem;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        margin: 0.25rem 0;
+        font-size: 10px;
+    }
+
+    li .span1{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
     .image-lists{
         position: static;
         margin: 1rem 0;
@@ -159,12 +185,6 @@ video{
 
  .img-container{
     flex-direction: column;
-}
-
-.car.hover {
-    position: fixed;
-    opacity: 0;
-    z-index: 0;
 }
 
 
