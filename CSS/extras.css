@@ -1,0 +1,26 @@
+header {
+    background-color: black;
+    position: fixed;
+}
+
+/*styling for image making it centered and sized correctly*/
+header img {
+    display: block; /*allows changes to margin*/
+    margin-left: auto; /*centers image*/
+    margin-right: auto; /*centers image*/
+    width: 30%; /*ensures the image occupies the full width of contaier*/
+}
+
+footer {
+    background-color: black;
+    text-align: center; /*centers the text*/
+    padding: 1em;
+    font-family: monospace
+}
+
+/*Footer text styling*/
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(160, 4, 35);
+}
