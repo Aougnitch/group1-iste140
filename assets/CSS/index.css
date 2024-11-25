@@ -1,0 +1,193 @@
+/* global body styles */
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
+/* container styling */
+.container {
+    display: grid; /*grid layout is used*/
+    grid-template-columns: 1fr 2fr;
+    height: 100vh; /*full viewport height */
+    position: relative; 
+}
+
+/* background image styling */
+.container img.background-image {
+    position: absolute; /* puts the image behind other elements */
+    width: 100%; /* covers the full width */
+    height: 100%; /* covers the full height */
+    min-width: 100%; 
+    min-height: 115%; 
+    transform: translate(0%, -8.7%); /* adjusts the positioning of the image */
+    z-index: -1; /* puts the image on top of the other elements of the paeg*/
+    object-fit: cover; /*makes sure image doesnt stretch */
+}
+
+
+/* sidebar style*/
+.sidebar {
+    padding: 1em; 
+    display: grid; 
+    grid-template-rows: repeat(4, auto); /* divides into 4  rows */
+    align-content: center;
+}
+
+/* sidebar link style */
+.sidebar a {
+    text-decoration: none; /* takes away underline from links */
+    color: black; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background: white;
+    margin-bottom: 1.2em; 
+    transition: 0.3s ease; /*  transition for hover effect */
+    padding: 0.8em;
+}
+
+/* sidebar  hover effect */
+.sidebar a:hover {
+    background-color: rgb(200, 9, 47); /* changes background colorwhen  hover */
+    transition: 0.2s ease-in-out;
+    color: white; 
+}
+
+/* sidebar link text styling */
+.sidebar a span {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+}
+/* styling of the description of the sidebar buttons*/
+.sidebar a p {
+    font-size: 1rem; /*font size for descriptions */
+    margin: 0; /* Removes default margin */
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    padding: 0px;
+    margin: 0.25rem 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+  }
+
+a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: darkred;
+    cursor: pointer;
+}
+
+label{
+    margin-left: 1rem;
+}
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .hamburger-icon {
+    color: black;
+  }
+
+  input{
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+
+
+
+.title{
+    width: 100%;
+    color: rgb(144, 21, 35);
+    font-weight: 600;
+    text-align: center;
+    font-family: "Porsche", serif;
+}
+
+/*footer style*/
+footer {
+    margin-top: 2em; 
+    color: rgb(144, 21, 35); 
+    width: 100%; 
+    text-align: center; 
+    font-family: monospace; 
+    font-size: large;
+    background-color: black; 
+    display: block; /*footer takes the whole bottom portion*/
+    padding: 0.1em 0; 
+}
+
+/* responsive design for 795px or smaller */
+@media (max-width: 795px) {
+    .container {
+        grid-template-columns: 1fr; /*makes sidebar and content vertically */
+    }
+
+    .sidebar {
+        padding: 2em;
+        grid-template-rows: repeat(4, auto); 
+    }
+
+    nav {
+        padding-top: 0; 
+    }
+
+    nav ul {
+        flex-direction: column; /*puts nav items vertically */
+        align-items: center; 
+    }
+
+    nav ul li {
+        grid-template-rows: repeat(2, auto); /*  vertical stacking */
+        margin: 0.8em; 
+        margin-bottom: 0; 
+    }
+
+    nav ul li a {
+        color: rgb(144, 21, 35); 
+    }
+
+    .sidebar a {
+        font-size: 0.9rem; 
+        background: rgba(255, 255, 255, 0.6); /* makes background semi-transparent */
+        text-align: center; 
+        border: none; 
+    }
+
+    .container img.background-image {
+        transform: translate(0%, -32%); /*chaneg image position for small screen */
+        object-fit: cover; /*makes sure image doesnt stretch */
+    }
+}
