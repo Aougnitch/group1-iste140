@@ -1,0 +1,214 @@
+header {
+    display: flex;
+    background-color: black;
+    position: fixed; /* Header stays fixed while scrolling */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+label {
+    font-size: 2rem; /* Adjust icon size */
+    color: white; /* Sets the hamburger icon color to white */
+    background-color: transparent; /* Removes background if applied */
+    padding: 0.5rem; /* Adds padding around the icon */
+    cursor: pointer;
+}
+
+/* Styling for image making it centered and sized correctly */
+header img {
+    display: block; /* Allows changes to margin */
+    margin-left: auto; /* Centers image */
+    margin-right: auto; /* Centers image */
+    width: 30%; /* Ensures the image occupies the full width of container */
+}
+/* Navigation styles */
+nav {
+    height: 3rem;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 0px;
+    margin: 0.25rem 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 1.5em;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+a:hover {
+    color: rgb(186, 14, 48);
+    cursor: pointer;
+}
+label {
+    margin-left: 1rem;
+}
+/* Hamburger menu icon styles */
+.menu-icon {
+    font-size: 2rem;
+    color: white; /* Makes the hamburger icon white */
+    background-color: black; 
+
+    cursor: pointer;
+}
+/* Menu styles */
+.menu {
+    margin-top: 1em;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 60px;
+}
+input {
+    display: none;
+}
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+/*styles header image*/
+header img {
+    display: block; /*allows changes to margin*/
+    margin-left: auto; /*centers image*/
+    margin-right: auto; /*centers image*/
+    width: 30%; /*makes image smaller*/
+}
+body {
+    background-color: black;
+}
+/*styles all elements*/
+* {
+    box-sizing: border-box;/*padding and border changes are within*/
+    margin: 0;
+    padding: 0;
+}
+/*styles orientation of the elements*/
+.container {
+    display: flex;
+    flex-direction: column;/*makes the elements a verticle stack*/
+    align-items: center;
+}
+.bigbox {
+    display: flex; /*makes element in row*/
+    width: 100%; /*takes full width of screen*/
+    margin: 0.25em ; /*creates small gap*/
+}
+.box1,.box2,.box5,.box6 {
+    width: 100%; /*takes full width of screen*/
+    margin: 0;
+}
+.img1,.img2,.img3,.img4 {
+    width: 100%; /*takes full width of screen*/
+}
+.box3,.box4 {
+    width: 40%; /*takes 40% width of screen*/
+    background-color: black;
+    padding: 2em;
+}
+.box2,.box5,.box6 {
+    width: 60%; /*takes 60% width of screen*/
+}
+.button {
+    margin-top: 4em; /*seperates button and text*/
+    display: block; /*allows margin changes*/
+    border: 2px solid black;
+    background-color: darkred;
+    width: 40%;
+    margin-left: auto; /*centers element*/
+    margin-right: auto; /*centers element*/
+    font-family: monospace;
+    padding: 1.5em;
+}
+/*styles button when cursor above it*/
+.button:hover {
+    background-color: white;
+    color: darkred;
+    transition: all 0.5s ease-in-out;/*smoother animation*/
+}
+/*styles button text*/
+a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/*styles the title*/
+.tit1 {
+    font-size: xx-large; /*large text*/
+    margin-bottom: 1.5em; /*seperates title and text*/
+    font-family: monospace;
+    color: darkred;
+    text-align: left; /*text is put to left*/
+    padding-left: 0.5em; /*adds space to left*/
+    padding-top: 2em; /*adds space to top*/
+    font-weight: bold;
+}
+/*styles the text*/
+.txt1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /*centeres text*/
+    line-height: 1.5; /*line spacing*/
+    font-weight: lighter;
+    font-size: x-small; /*small text*/
+}
+/*styles images*/
+.bgtext {
+    display: block; /*allows margin changes*/
+    background-color: black;
+    width: 100%; /*takes full width of screen*/
+}
+/*styles images*/
+.imgt {
+    display: block; /*allows margin changes*/
+    width: 60%; /*takes 60% width of screen*/
+    margin: 0 auto; /*centers element*/
+}
+footer {
+    background-color: black;
+    text-align: center; /*centers the text*/
+    padding: 1em;
+    font-family: monospace
+}
+
+/*Footer text styling*/
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(160, 4, 35);
+}
+@media (max-width: 525px) { 
+    .bigbox {
+         flex-direction: column; 
+        } 
+        .box3, .box4, .box2, .box5, .box6 {
+             width: 100%; 
+            } header img { 
+                width: 50%; /* Full width on mobile devices */ 
+            } 
+        }  @media (max-width: 768px) { 
+            .bigbox { 
+                flex-direction: column; 
+            } .box3, .box4, .box2, .box5, .box6 {
+                 width: 100%; 
+                } header img { 
+                    width: 50%; /* Full width on iPad screens */ 
+                } 
+            }
