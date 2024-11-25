@@ -1,10 +1,8 @@
-
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Porsche-next", Arial;
+    font-family: "Arial";
     
 }
 
@@ -28,8 +26,62 @@ li{
 }
 
 
+/* NAVIGATION BAR */
+
+nav {
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+  }
+
+  a{
+    text-decoration: none;
+    
+  }
+
+nav a{
+    color: black;
+}
+
+nav a:hover{
+    color: darkred;
+    cursor: pointer;
+}
+
+label{
+    margin-left: 1rem;
+}
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .hamburger-icon {
+    color: black;
+  }
+
+  input{
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+
+
+
 .title{
-    background-color:rgb(238,239,242);
+    width: 100%;
+    background-color:rgb(255, 255, 255);
     color: rgb(144, 21, 35);
     font-weight: 600;
     text-align: center;
@@ -40,10 +92,8 @@ li{
 /* top container */
 
 .container-1{
-    
     width: 100%;
     height: auto;
-    
 }
 
 video{
@@ -105,6 +155,51 @@ video{
     opacity: 1;
     z-index: 1;
 }
+
+.bottom-row-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+    height:4rem;
+}
+
+.gallery-button{
+    padding: 0.5rem;
+    background-color: white;
+    border: solid 1px black;
+}
+
+.gallery-button a{
+    color: black;
+}
+
+.gallery-button:hover a{
+    color: darkred;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(238,239,242);
+}
+
+footer h3{
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(166, 40, 40);
+
+}
+
 
 
 

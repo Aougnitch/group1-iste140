@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/page3.css">
-    <title>Our top models</title>
+    <link rel="stylesheet" href="./assets/CSS/page3.css">
+    <title>Porsche</title>
 </head>
 <body>
 
 
     <main>
-
-        <div class="container-1">
+        <nav>
+            <input type="checkbox" id="menu-toggle"/>
+            <label for="menu-toggle"><span class="hamburger-icon">&#9776;</span></label>
             <h1 class="title">Porsche</h1>
-            <video src="./assets/cin-vid.mp4" autoplay loop preload="auto">
+            <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./page2.html">Specs</a></li>
+              <li><a href="./page3.html">Compare</a></li>
+              <li><a href="./extras.html">Extras</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./page5.html">Gallery</a></li>
+              <li><a href="./ref.html">Refrences</a></li>
+            </ul>
+          </nav>
+
+          <div class="container-1">
+            <video src="./assets/images/cin-vid.mp4" autoplay loop preload="auto">
             </video>
-        </div>
+          </div>
+    
 
 
         <div class="img-container">
             <div class="single-img-con">
                 <div class="image-wrapper">
-                    <img src="./assets/gt2.png" alt="" class="car default">
-                    <img src="./assets/top-gt2rs.png" alt="" class="car hover">
+                    <img src="./assets/images/gt2.png" alt="" class="car default">
+                    <img src="./assets/images/top-gt2rs.png" alt="" class="car hover">
                 </div>
             <ul class="image-lists">
             <li><span class="span1">Engine: </span><span>3.8L twin-turbocharged flat-six.</span></li>
@@ -34,8 +48,8 @@
         
             <div class="single-img-con">
                 <div class="image-wrapper">
-                    <img src="./assets/gt3.png" alt="" class="car default">
-                    <img src="./assets/top-gt3rs.png" alt="" class="car hover">
+                    <img src="./assets/images/gt3.png" alt="" class="car default">
+                    <img src="./assets/images/top-gt3rs.png" alt="" class="car hover">
                 </div>
                 <ul class="image-lists">
                 <li><span class="span1">Engine: </span><span>4.0L naturally aspirated flat-six.</span></li>
@@ -47,8 +61,8 @@
 
             <div class="single-img-con">
                 <div class="image-wrapper">
-                    <img src="./assets/gt4.png" alt="" class="car default">
-                    <img src="./assets/top-gt4rs.png" alt="" class="car hover">
+                    <img src="./assets/images/gt4.png" alt="" class="car default">
+                    <img src="./assets/images/top-gt4rs.png" alt="" class="car hover">
                 </div>
                 <ul class="image-lists">
                 <li><span class="span1">Engine: </span><span>4.0L naturally aspirated flat-six.</span></li>
@@ -57,11 +71,18 @@
                 <li><span class="span1">Top Speed: </span><span>196 mph.</span></li>
                 </ul>  
             </div>
+            
     </div>
+    <div class="bottom-row-container">
+        <button class="gallery-button"><a href="./page5.html">See Our Gallery</a></button>
+    </div>
+    
+   
 
-   
-   
-        
+    <footer>    
+        <h3>Alexander Ougnitch, Mohammed Halil, Adeeb Mohammed</h3>
+    </footer>  
     </main>
+    
 </body>
 </html>
