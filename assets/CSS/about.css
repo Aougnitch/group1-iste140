@@ -1,0 +1,173 @@
+/* Existing styles */
+body {
+    background-image: url('https://wallpaper.forfun.com/fetch/c0/c01662f04a772e80bd330eef1b9c77b0.jpeg');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center; /* Centers the background image */
+    margin: 0; /* Ensures the background touches the edge of the browser */
+    padding: 0;
+}
+/* Styles header section of the page */
+header {
+    display: flex;
+    background-color: black;
+    position: fixed; /* Header stays fixed while scrolling */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+label {
+    font-size: 2rem; /* Adjust icon size */
+    color: white; /* Sets the hamburger icon color to white */
+    background-color: transparent; /* Removes background if applied */
+    padding: 0.5rem; /* Adds padding around the icon */
+    cursor: pointer;
+}
+
+/* Styling for image making it centered and sized correctly */
+header img {
+    display: block; /* Allows changes to margin */
+    margin-left: auto; /* Centers image */
+    margin-right: auto; /* Centers image */
+    width: 30%; /* Ensures the image occupies the full width of container */
+}
+/* Navigation styles */
+nav {
+    height: 3rem;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 0px;
+    margin: 0.25rem 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 1.5em;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+a:hover {
+    color: rgb(186, 14, 48);
+    cursor: pointer;
+}
+label {
+    margin-left: 1rem;
+}
+/* Hamburger menu icon styles */
+.menu-icon {
+    font-size: 2rem;
+    color: white; /* Makes the hamburger icon white */
+    background-color: black; 
+
+    cursor: pointer;
+}
+/* Menu styles */
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    padding: 60px;
+}
+input {
+    display: none;
+}
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+/* Styles main divbox width and background properties */
+.main {
+    width: 60%; /* Makes main divbox slimmer */
+    display: block; /* Allows changes to margin */
+    background-color: white;
+    margin-left: auto; /* Centers content */
+    margin-right: auto; /* Centers content */
+    margin-bottom: 6em; /* Space between main divbox and footer */
+}
+/* Styles title in main divbox */
+.tit {
+    font-family: monospace;
+    font-size: x-large;
+    padding-left: 3em; /* Space between left of text and border */
+    padding-top: 2em; /* Space between top of text and border */
+    color: rgb(160, 4, 35);
+}
+/* Styles the content box for text */
+.textbox {
+    width: 60%; /* Matches the width of the main divbox */
+    display: block; /* Allows changes to margin */
+    background-color: white;
+    color: #333;
+    margin-left: auto; /* Centers content */
+    margin-right: auto; /* Centers content */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Centers the text */
+    box-sizing: border-box; /* Ensures padding changes is within the box */
+    padding: 2em;
+    padding-bottom: 1em; /* Adds extra space between end of text and end image */
+    line-height: 2.5; /* Increases the line spacing */
+    font-weight: lighter;
+    font-size: small;
+}
+/* Provides an empty space to allow for scrolling */
+.empty {
+    height: 100vh; /* Creates an empty space that occupies the full height of browser making user scroll for main content */
+}
+/* Styles end image inside the main divbox */
+.logo {
+    margin-top: 1.5em; /* Adds space between logo and text */
+    padding-bottom: 1em;
+    display: block; /* Allows changes to margin */
+    width: 25%;
+    margin-left: auto; /* Centers image */
+    margin-right: auto; /* Centers image */
+}
+/* Styles the footer */
+footer {
+    background-color: black;
+    text-align: center; /* Centers the text */
+    padding: 1em;
+    font-family: monospace;
+}
+/* Styles footer text */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(160, 4, 35);
+}
+/* Responsive design for smaller screens (mobile devices) */
+@media screen and (max-width: 525px) {
+    header img{
+        width:50%;
+    }
+    .main, .textbox {
+        width: 100%; /* Makes the div boxes take up full width for mobile */
+    }
+    .tit {
+        font-size: medium; /* Reduces font size for mobile devices */
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+    .textbox {
+        font-size: 14px; /* Smaller font size for mobile */
+        line-height: 1; /* Reduces line spacing for mobile */
+    }
+}
+
